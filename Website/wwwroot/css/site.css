@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar-expand-sm .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
