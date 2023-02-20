@@ -22,7 +22,31 @@ namespace Website.Controllers
         {
             return View();
         }
-
+        [Route("kaart")]
+        public IActionResult Kaart()
+        {
+            return View();
+        }
+        [Route("activiteiten")]
+        public IActionResult Activiteiten()
+        {
+            return View();
+        }
+        [Route("openingstijden")]
+        public IActionResult Openingstijden()
+        {
+            return View();
+        }
+        [Route("contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        [Route("winkelwagen")]
+        public IActionResult Winkelwagen()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
