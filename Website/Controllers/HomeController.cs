@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Website.Models;
+using Website.Database;
 
 namespace Website.Controllers
 {
@@ -15,8 +16,37 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            // lijst met producten ophalen
+            var products = GetAllProducts();
+
+            // de lijst met producten in de html stoppen
+            return View(products);
         }
+
+        public List<Product> GetAllProducts()
+        {
+            // alle producten ophalen uit de database
+            var rows = DatabaseConnector.GetRows("select * from product");
+
+            // lijst maken om alle producten in te stoppen
+            List<Product> products = new List<Product>();
+
+            foreach (var row in rows)
+            {
+                // Voor elke rij maken we nu een product
+                Product p = new Product();
+                p.naam = (string)row["naam"];
+                p.prijs = (decimal)row["prijs"];
+                p.omschrijving = (string)row["omschrijving"];
+                p.id = Convert.ToInt32(row["id"]);
+
+                // en dat product voegen we toe aan de lijst met producten
+                products.Add(p);
+            }
+
+            return products;
+        }
+
         [Route("privacy")]
         public IActionResult Privacy()
         {
