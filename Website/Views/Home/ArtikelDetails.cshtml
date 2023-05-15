@@ -1,0 +1,13 @@
+﻿
+
+@using Website.Database
+@model Product
+@{
+  ViewData["Title"] = Model.naam;
+}
+
+<div class="text-center">
+  <h1 class="display-4">@Model.naam</h1>
+  <p>@Model.prijs euro per stuk</p>
+  <p>Haast je! Er zijn er nog maar over!</p>
+</div>

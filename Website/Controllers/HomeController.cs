@@ -46,7 +46,36 @@ namespace Website.Controllers
 
             return products;
         }
+        public Product GetProduct(int id)
+        {
+            // product ophalen uit de database op basis van het id
+            var rows = DatabaseConnector.GetRows($"select * from product where id = {id}");
 
+            // We krijgen altijd een lijst terug maar er zou altijd één product in moeten
+            // zitten dus we pakken voor het gemak gewoon de eerste
+            Product product = GetProductFromRow(rows[0]);
+
+            // Als laatste sturen het product uit de lijst terug
+            return product;
+        }
+
+        private Product GetProductFromRow(Dictionary<string, object> row)
+        {
+            Product p = new Product();
+            p.naam = (string)row["naam"];
+            p.prijs = (decimal)row["prijs"];
+            p.omschrijving = (string)row["omschrijving"];
+            p.id = Convert.ToInt32(row["id"]);
+
+            return p;
+        }
+        [Route("product/{id}")]
+        public IActionResult ProductDetails(int id)
+        {
+            var product = GetProduct(id);
+
+            return View(product);
+        }
         [Route("privacy")]
         public IActionResult Privacy()
         {

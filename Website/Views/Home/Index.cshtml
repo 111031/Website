@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Website.Database
+@model List<Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -65,3 +67,8 @@
         }
         </script>
 </div>
+
+@foreach (Product product in Model)
+  {
+    <a href="/product/@product.id">@product.naam</a>
+  }
