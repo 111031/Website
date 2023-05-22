@@ -16,11 +16,11 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
-            // lijst met producten ophalen
-            var products = GetAllProducts();
+            
+            //var products = GetAllProducts();
 
             // de lijst met producten in de html stoppen
-            return View(products);
+            return View(/*products*/);
         }
 
         public List<Product> GetAllProducts()
@@ -72,9 +72,9 @@ namespace Website.Controllers
         [Route("product/{id}")]
         public IActionResult ProductDetails(int id)
         {
-            var product = GetProduct(id);
+            //var product = GetProduct(id);
 
-            return View(product);
+            return View(/*product*/);
         }
         [Route("privacy")]
         public IActionResult Privacy()
