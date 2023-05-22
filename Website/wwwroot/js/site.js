@@ -27,7 +27,7 @@ function getCookie(cname) {
 function checkCookie() {
     let user = getCookie("username");
     if (user == "") {
-        user = prompt("Please enter your name:", "");
+        user = prompt("Please accept our cookies:", "");
         if (user != "" && user != null) {
             setCookie("username", user, 1);
         }
