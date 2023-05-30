@@ -25,11 +25,11 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    let user = getCookie("username");
+    let user = getCookie("cookies");
     if (user == "") {
-        user = prompt("Please accept our cookies:", "");
+        user = confirm("Please accept our cookies:", "");
         if (user != "" && user != null) {
-            setCookie("username", user, 1);
+            setCookie("cookies", user, 1);
         }
     }
 }
