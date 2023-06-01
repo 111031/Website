@@ -2,5 +2,32 @@
     ViewData["Title"] = "Contact";
 }
 <h1>@ViewData["Title"]</h1>
-
-<p>Use this page to detail your site's privacy policy.</p>
+    <div class="div-container-form">
+        <div class="divform">
+          <form class = "form" action="/action_page.php">
+            <fieldset>
+              <label for="vname">Voornaam:</label><br>
+              <input type="text" id="vname" name="vname" placeholder="Bill" required><br>
+              <label for="aname">Achternaam:</label><br>
+              <input type="text" id="aname" name="aname" placeholder="Gates" required><br>
+              <label for="land">Land:</label><br>
+              <select name="land" id="land" required>
+                <option value="Overig">Overig</option>
+                <option value="België">België</option>
+                <option value="Duitsland">Duitsland</option>
+                <option value="Luxemburg">Luxemburg</option>
+                <option value="Nederland">Nederland</option>
+                <option value="Spanje">Spanje</option>
+                <option value="USA">USA</option>
+              </select><br>
+              <label for="mail">Mail adres:</label><br>
+              <input type="email" id="mail" name="mail" placeholder="billgates@gmail.com" required><br>
+              <label for="telefoon">Telefoonnummer:</label><br>
+              <input type="tel" id="telefoon" name="telefoon" pattern="^\d{10}$" placeholder="06-55523053" required><br>
+              <label for="msg">Bericht:</label><br>
+              <textarea class = "msg"type="text" id="msg" name="msg" placeholder="Wanneer Bill Gates het warm heeft zet hij de 'windows' open." required></textarea><br><br>
+              <input class="tekst" type="submit" value="Verzenden">
+            </fieldset>
+          </form>
+        </div>
+    </div>
