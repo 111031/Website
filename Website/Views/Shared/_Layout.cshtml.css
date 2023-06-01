@@ -44,5 +44,15 @@ button.accept-policy {
   bottom: 0;
   width: 100%;
   white-space: nowrap;
-  line-height: 60px;
+  font-size: 12px;
+  color: black;
+}
+
+.footer p {
+  color: black;
+  margin-bottom: 0%;
+}
+
+.footer a {
+    color: black;
 }
