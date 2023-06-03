@@ -106,6 +106,16 @@ namespace Website.Controllers
         {
             return View();
         }
+        [Route("artikelgiraffe")]
+        public IActionResult Artikel_Giraffe()
+        {
+            return View();
+        }
+        [Route("artikelpinguin")]
+        public IActionResult Artikel_Pinguin()
+        {
+            return View();
+        }
         [Route("winkelwagen")]
         public IActionResult Winkelwagen()
         {
