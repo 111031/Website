@@ -101,17 +101,18 @@ namespace Website.Controllers
         {
             return View();
         }
+        [Route("artikelpanda")]
+        public IActionResult Artikel_Panda()
+        {
+            return View();
+        }
         [Route("winkelwagen")]
         public IActionResult Winkelwagen()
         {
             return View();
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        [Route("artikelpanda")]
-        public IActionResult Artikelpanda()
-        {
-            return View();
-        }
+        
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
