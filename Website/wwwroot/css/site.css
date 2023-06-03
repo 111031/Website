@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -14,9 +14,11 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: #4C5F3B;
-  outline: none;
+    margin-bottom: 60px;
+    background-color: #4C5F3B;
+    background: url(Image) repeat center center fixed;
+    background-size: contain;
+    outline: none;
 }
 
 footer{

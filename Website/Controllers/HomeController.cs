@@ -121,8 +121,23 @@ namespace Website.Controllers
         {
             return View();
         }
-        
-        
+        [Route("schoolrijsjes")]
+        public IActionResult Activiteiten_Schoolrijsjes()
+        {
+            return View();
+        }
+        [Route("kinderfeestjes")]
+        public IActionResult Activiteiten_Kinderfeestjes()
+        {
+            return View();
+        }
+        [Route("safari")]
+        public IActionResult Activiteiten_Safari()
+        {
+            return View();
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

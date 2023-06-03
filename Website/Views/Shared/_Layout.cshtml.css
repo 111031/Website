@@ -1,5 +1,32 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿
+/*dropdown hamburger menu*/
+.list {
+    display: none;
+    position: absolute;
+    top: calc(10px + 1.5vw);
+    left: inherit;
+    background-color: #78733c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+
+.list ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding: 4px;
+}
+
+.list li {
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+}
+
+
+li:hover .list {
+    display: block;
+}
 
 a.navbar-brand {
   white-space: normal;
@@ -8,7 +35,8 @@ a.navbar-brand {
 }
 
 a {
-  color: #0077cc;
+    color: #0077cc;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -57,30 +85,3 @@ button.accept-policy {
     color: black;
 }
 
-/*dropdown hamburger menu*/
-.list {
-    display: none;
-    position: absolute;
-    top: calc(10px + 1.5vw);
-    left: inherit;
-    background-color: #78733c;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    z-index: 1;
-}
-.list ul {
-    list-style-type: none;
-}
-.list li {
-    display: flex;
-    text-decoration: none;
-    background-color: rgb(189, 189, 189);
-    text-align: center;
-    padding: 0 2vw;
-    border: none;
-    list-style-type: none;
-}
-
-li:hover .list {
-    display: block;
-}
