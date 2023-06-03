@@ -16,8 +16,8 @@ html {
 body {
     margin-bottom: 60px;
     background-color: #4C5F3B;
-    background: url(Image) repeat center center fixed;
-    background-size: contain;
+    /*background: url(Image) repeat center center fixed;
+    background-size: contain;*/
     outline: none;
 }
 
