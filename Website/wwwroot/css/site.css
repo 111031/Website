@@ -55,3 +55,8 @@ h {
     background: transparent;
     outline: none;
 }
+
+subtitel p {
+    font-size: 24px;
+    color: #6f402a;
+}
