@@ -56,3 +56,31 @@ button.accept-policy {
 .footer a {
     color: black;
 }
+
+/*dropdown hamburger menu*/
+.list {
+    display: none;
+    position: absolute;
+    top: calc(10px + 1.5vw);
+    left: inherit;
+    background-color: #78733c;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 1;
+}
+.list ul {
+    list-style-type: none;
+}
+.list li {
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    padding: 0 2vw;
+    border: none;
+    list-style-type: none;
+}
+
+li:hover .list {
+    display: block;
+}
