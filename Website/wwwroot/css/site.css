@@ -46,6 +46,10 @@ h {
     align-items: center;
 }
 
+.nav-item a {
+    font-size: 25px;
+}
+
 .input-container {
     background-color: #a88954;
     border-style: solid;
@@ -57,6 +61,7 @@ h {
     border: none;
     background: transparent;
     outline: none;
+    font-size: 20px;
 }
 
 subtitel p {
