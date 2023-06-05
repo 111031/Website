@@ -43,6 +43,7 @@ h {
 
 .nav-item {
     display: flex;
+    align-items: center;
 }
 
 .input-container {
