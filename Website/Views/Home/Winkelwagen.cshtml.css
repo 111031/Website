@@ -1,0 +1,33 @@
+﻿table {
+    border: 1px solid #000000;
+    background-color: #D99F6C;
+    width: 80%;
+    text-align: left;
+}
+
+    table td, table.Openingstijden th {
+        border: 3px solid #000000;
+        padding: 3px 2px;
+    }
+
+    table tbody td {
+        font-size: 13px;
+        font-weight: bold;
+        color: #333333;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #BF8360;
+    }
+
+    table thead {
+        background-color: #4C5F3B;
+    }
+
+    table thead th {
+        font-size: 15px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border: 3px solid #000000;
+        padding: 3px 2px;
+    }
